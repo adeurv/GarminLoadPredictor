@@ -23,14 +23,14 @@ Le **surmenage** est défini dans ce cadre comme un état où la **charge d’en
 
 #### Variable Cible (Output)
 
-La variable à prédire est $\text{overtraining\_risk}$ (indicateur binaire) :
+La variable à prédire est $\text{overtrainingrisk}$ (indicateur binaire) :
 
 | Valeur | Interprétation |
 | :---: | :--- |
 | **0** | **Pas de surmenage** (récupération suffisante, charge modérée) |
 | **1** | **Risque de surmenage** (fatigue, manque de récupération, stress élevé) |
 
-> **⚠️ Limite :** En l'absence d'un diagnostic médical réel, la variable cible $\text{overtraining\_risk}$ est une **variable artificielle** construite via une **heuristique** (règles basées sur les données : stress élevé, faible sommeil, activités fréquentes, etc.). Elle sert à tester la faisabilité du modèle.
+> **⚠️ Limite :** En l'absence d'un diagnostic médical réel, la variable cible $\text{overtrainingrisk}$ est une **variable artificielle** construite via une **heuristique** (règles basées sur les données : stress élevé, faible sommeil, activités fréquentes, etc.). Elle sert à tester la faisabilité du modèle.
 
 ---
 
@@ -77,7 +77,7 @@ Cette section couvre les étapes pratiques de l'analyse et de la modélisation :
 * **Préparation des Données**
     * Nettoyage (gestion des valeurs manquantes et des erreurs).
     * Sélection des variables pertinentes ($\mathbf{X}$).
-    * Construction de la **variable cible** $\text{overtraining\_risk}$ (heuristique).
+    * Construction de la **variable cible** $\text{overtrainingrisk}$ (heuristique).
 * **Sélection d'un Modèle de Base**
     * Définition de la métrique de performance (e.g., F1-Score, Recall).
     * Entraînement et évaluation d'un premier modèle de classification comme **modèle de référence**. 
@@ -98,7 +98,3 @@ Voici les deux balises d'image à insérer dans votre notebook/documentation :
 
 1.  ![Texte alternatif décrivant l'image](./data/garmin.png)
 2.  ![Texte alternatif décrivant l'image](./data/vélo.jpg)
-
----
-
-Puis-je vous aider à rédiger le plan détaillé pour la section **2. Pipeline Machine Learning** ou à commencer le code Python pour la récupération des données ?
